@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 id="the_title"class="display-4 title-text" onmouseover="newColor()" onmouseout="oldColor()">Xavier's daily video pick:</h1>
+
+    <div id="current_date">
+        <script>
+            document.getElementById("current_date").innerHTML = Date();
+        </script>
+    </div>
+
+    <div id="sized"></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SX_ViT4Ra7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<!-- <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> -->
+</div>
+
+<p><button onclick="myMove()">Click Me</button></p>
+
+<div id="container">
+    <div id="animate"></div>
+</div>
+
+
+
